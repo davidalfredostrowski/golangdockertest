@@ -1,0 +1,5 @@
+# directory was /home/ubuntu/deploydave where all files were stored.
+
+
+sudo docker build -t deploydave  . 
+sudo docker run -p 8080:8080  -tid deploydave
