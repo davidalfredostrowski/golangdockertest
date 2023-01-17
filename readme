@@ -1,5 +1,22 @@
 # directory was /home/ubuntu/deploydave where all files were stored.
 
+pwd
+    2  ls
+    3  mkdir golangdockertest
+    4  cd golangdockertest/
+    5  vi hello.go
+    6  vi go.mod
+    7  vi Dockerfile
+    8  ls
+    9  pwd
+   10  udo docker build -t deploydave  .
+   11  sudo docker build -t deploydave  .
+   12  sudo snap install docker
+   13  sudo docker build -t golangdockertest  .
+   14  sudo docker run -p 8080:8080  -tid golangdockertest
+   15  ls
+   16  cat hello.go
+   17  history
 
-sudo docker build -t deploydave  . 
-sudo docker run -p 8080:8080  -tid deploydave
+sudo docker build -t golangdockertest  . 
+sudo docker run -p 8080:8080  -tid golangdockertest
